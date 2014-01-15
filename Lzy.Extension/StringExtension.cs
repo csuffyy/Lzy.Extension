@@ -16,6 +16,16 @@ namespace Lzy.Extension
         {
             return string.IsNullOrEmpty(s);
         }
+        
+        /// <summary>
+        /// 验证是否为数字
+        /// </summary>
+        /// <param name="s">要验证的字符串</param>
+        /// <returns>true为数字，false为非数字</returns>
+        public static bool IsNumeric(this string s)
+        {
+        	return Regex.IsMatch(s, @"^[+-]?\d*[.]?\d*$");
+        }
 
         /// <summary>
         /// 扩展：Regex.IsMatch

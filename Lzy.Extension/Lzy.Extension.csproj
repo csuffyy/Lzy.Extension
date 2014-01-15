@@ -55,6 +55,7 @@
     <Compile Include="Controls\ControlExtension.cs" />
     <Compile Include="EnumExtension.cs" />
     <Compile Include="Grammar\GrammarExtension.cs" />
+    <Compile Include="ImageExtension.cs" />
     <Compile Include="MultiInheritance\MultiInheritanceExtension.cs" />
     <Compile Include="ObjectExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
