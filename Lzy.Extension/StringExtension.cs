@@ -18,6 +18,15 @@ namespace Lzy.Extension
         }
         
         /// <summary>
+        /// 扩展：string.IsNullOrWhiteSpace
+        /// </summary>
+        /// <param name="s"></param>
+        public static bool IsNullOrWhiteSpace(this string s)
+        {
+            return string.IsNullOrWhiteSpace(s);
+        }
+        
+        /// <summary>
         /// 验证是否为数字
         /// </summary>
         /// <param name="s">要验证的字符串</param>
