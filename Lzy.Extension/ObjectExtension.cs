@@ -31,7 +31,7 @@ namespace Lzy.Extension
         {
             return (T)(object)obj;
         }
-        
+
         /// <summary>
         /// 根据属性名称获取属性的值
         /// </summary>
@@ -44,7 +44,12 @@ namespace Lzy.Extension
             object obj;
             try
             {
+                //obj =
+                //    typeof(T).GetProperty(propertyName, BindingFlags.FlattenHierarchy | BindingFlags.IgnoreCase)
+                //             .GetValue(t, null);
+
                 obj = typeof(T).GetProperty(propertyName).GetValue(t, null);
+                //obj = typeof(T).InvokeMember(propertyName, BindingFlags.GetProperty, null, t, null);
             }
             catch (AmbiguousMatchException)
             {
@@ -52,7 +57,7 @@ namespace Lzy.Extension
             }
             catch (NullReferenceException)
             {
-                throw new NullReferenceException("属性名称错误");                
+                throw new NullReferenceException("属性名称错误");
             }
             catch (Exception)
             {

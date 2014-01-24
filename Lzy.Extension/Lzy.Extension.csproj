@@ -60,6 +60,13 @@
     <Compile Include="ObjectExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringExtension.cs" />
+    <Compile Include="UnconstrainedMelody\DelegateConstraint.cs" />
+    <Compile Include="UnconstrainedMelody\Delegates.cs" />
+    <Compile Include="UnconstrainedMelody\EnumInternals.cs" />
+    <Compile Include="UnconstrainedMelody\Enums.cs" />
+    <Compile Include="UnconstrainedMelody\Flags.cs" />
+    <Compile Include="UnconstrainedMelody\IEnumConstraint.cs" />
+    <Compile Include="UnconstrainedMelody\TypeArgumentException.cs" />
     <Compile Include="Validate\ValidateExtension.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Lzy.Extension
@@ -45,6 +47,17 @@ namespace Lzy.Extension
         public static bool IsMatch(this string s, string pattern)
         {
             return s != null && Regex.IsMatch(s, pattern);
+        }
+        
+        /// <summary>
+        /// 对字符串进行分类
+        /// </summary>
+        /// <param name="s">要分类的字符串</param>
+        /// <param name="list">类别组</param>
+        /// <returns>所属的类别组</returns>
+        public static IEnumerable<string> Classify(this string s, IEnumerable<string> list)
+        {
+            return list.Where(s.Contains);
         }
 
         /// <summary>
